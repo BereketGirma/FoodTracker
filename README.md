@@ -5,7 +5,7 @@
 # AND101 Milestone 1 - **Life Goal Tracker**
 
 Submitted by:
-- **Berket Girma**
+- **Bereket Girma**
 - **Yihong Li**
 - **Dinesha Shair**
 - **Hoang Vu**
