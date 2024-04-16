@@ -69,11 +69,14 @@ Required Feature
 ## Wireframes
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="https://github.com/BereketGirma/FoodTracker/assets/145808743/61b83a1b-4594-44ea-9bd4-c061e557cdbd" width=250>
+
+<img src="https://github.com/BereketGirma/FoodTracker/assets/145808743/c9fc6dc5-cbdb-4812-b7ce-b17bbc1d659d" width=250>
 
 ### [BONUS] Interactive Prototype
+<img src="https://github.com/BereketGirma/FoodTracker/assets/145808743/57a58a01-c009-47f0-905c-f842ee83cc27" width=250>
 
 ## Build Notes
 
