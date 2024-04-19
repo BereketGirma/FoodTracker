@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">FoodTrackerApp</string>
+    <string name="surveyIntro">Please fill out the following survey:</string>
+
+    <string name="nameHint">Name</string>
+    <string name="age">Age</string>
+
+    <!--Submit button-->
+    <string name="submit">Submit</string>
+
+    <!--Question 1 options-->
+    <string name="question1">Gender</string>
+    <string name="q1option1">Male</string>
+    <string name="q1option2">Female</string>
+    <string name="q1option3">Prefer not to say</string>
+
+    <!--Question 2 options-->
+    <string name="question2">How often do you work out?</string>
+    <string name="q2option1">1-2 times a week</string>
+    <string name="q2option2">3-5 times a week</string>
+    <string name="q2option3">6-7 times a week</string>
+    <string name="q2option4">None</string>
 </resources>
