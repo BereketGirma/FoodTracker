@@ -1,6 +1,8 @@
 package com.example.foodtrackerapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // add temporary button to lead to my activity upon launching
+        val toCategoryButton: Button = findViewById(R.id.toCategoriesButton)
+        toCategoryButton.setOnClickListener() {
+            val intent = Intent(this@MainActivity, FoodCategoryScreen::class.java)
+            startActivity(intent)
         }
     }
 }
