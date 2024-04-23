@@ -7,25 +7,141 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Food Total Calories -->
+
+    <!-- Exercise Calories -->
+
+    <!-- Total Left Calories -->
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textViewCalorieGoal"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:text="Calorie Goal: "
+        android:textColor="@android:color/black"
+        style="@style/AppMainTextStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFoodTotalCalories"
+        app:layout_constraintHorizontal_bias="0.939"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewCalorieGoalValue"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/textViewCalorieGoal"
+        android:text="2000"
+        style="@style/AppMainnumberStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFoodTotalCaloriesValue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalorieGoal" />
+
+    <TextView
+        android:id="@+id/textViewFoodTotalCalories"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textViewCalorieGoalValue"
+        android:layout_marginTop="68dp"
+        android:text="Food Total Calories: "
+        style="@style/AppMainTextStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewExerciseCalories"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFoodTotalCaloriesValue"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/textViewFoodTotalCalories"
+        android:text="1500"
+        style="@style/AppMainnumberStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewExerciseCaloriesValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodTotalCalories" />
+
+    <TextView
+        android:id="@+id/textViewExerciseCalories"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textViewFoodTotalCaloriesValue"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:text="Exercise Calories: "
+        style="@style/AppMainTextStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalLeftCalories"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewExerciseCaloriesValue"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/textViewExerciseCalories"
+        android:layout_marginEnd="4dp"
+        android:text="300"
+        style="@style/AppMainnumberStyle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalLeftCaloriesValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseCalories" />
+
+    <TextView
+        android:id="@+id/textViewTotalLeftCalories"
+        android:layout_width="94dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/textViewExerciseCaloriesValue"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="28dp"
+        android:text="Total Left Calories: "
+        style="@style/AppMainTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotalLeftCaloriesValue"
+        android:layout_width="94dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/textViewTotalLeftCalories"
+        android:layout_marginEnd="28dp"
+        android:text="1200"
+        style="@style/AppMainnumberStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalLeftCalories" />
+
     <Button
         android:id="@+id/checkingProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="185dp"
+        android:layout_height="54dp"
         android:text="@string/click_to_check_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/caloriesRemainingLabel"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+        android:text="Calories Remaining ...^"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodTotalCaloriesValue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="411dp"
+        android:layout_height="474dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesRemainingLabel" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:text="Add Food to the List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

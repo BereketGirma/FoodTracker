@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/bldimageView"
+        android:layout_width="411dp"
+        android:layout_height="226dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/breakfast" />
+
+
+    <TextView
+        android:id="@+id/calorienumview"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:text="3TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bldtextLabel"
+        app:layout_constraintTop_toBottomOf="@+id/bldtotalCalorieLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bldtotalCalorieLabel"
+        android:layout_width="173dp"
+        android:layout_height="31dp"
+        android:text="Calories Total"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/listLabel"
+        android:layout_width="407dp"
+        android:layout_height="24dp"
+        android:text="listMessage"
+        android:textStyle="bold|italic"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bldtextLabel" />
+
+    <TextView
+        android:id="@+id/listview"
+        android:layout_width="407dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="4dp"
+        android:text="list*"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/bldtextLabel"
+        android:layout_width="223dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="Breakfast"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

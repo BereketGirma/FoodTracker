@@ -1,11 +1,13 @@
 package com.example.foodtrackerapp
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +21,8 @@ import com.codepath.asynchttpclient.RequestHeaders
 
 
 class AddMeal : AppCompatActivity() {
+    private var calories = 0.0
+    private var itemName = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +32,7 @@ class AddMeal : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
 
         findViewById<Button>(R.id.addMealBtn).setOnClickListener {
@@ -50,12 +55,23 @@ class AddMeal : AppCompatActivity() {
                 json?.jsonArray?.let { jsonArray ->
                     if (jsonArray.length() > 0) {
                         val firstItem = jsonArray.getJSONObject(0)
-                        val calories = firstItem.getDouble("calories")
-                        var itemName = firstItem.getString("name")
+                         calories = firstItem.getDouble("calories")
+                        Log.d("testing check addMeal", calories.toString() )
+                         itemName = firstItem.getString("name")
+                        Log.d("TAG", itemName)
                         //Toast.makeText(this@AddMeal, "Calories: $calories", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this@AddMeal, MainActivity::class.java)
-                        intent.putExtra("calories", calories)
-                        intent.putExtra("item", itemName)
+                        val mealType: String = findViewById<EditText>(R.id.enteredMealNumber).text.toString()
+
+                        // Get the selected radio button's text
+
+                        // Store data in SharedPreferences
+                        val editor = getSharedPreferences("my_preference_file1", Context.MODE_PRIVATE).edit()
+                        editor.putString("mealName", itemName)
+                        editor.putFloat("calories", calories.toFloat())
+                        editor.putString("mealType", mealType)
+                        editor.apply()
+
                         startActivity(intent)
                     } else {
                         Toast.makeText(this@AddMeal, "Please enter a different food", Toast.LENGTH_SHORT).show()
@@ -69,6 +85,7 @@ class AddMeal : AppCompatActivity() {
                 Toast.makeText(this@AddMeal, responseString ?: "Error", Toast.LENGTH_SHORT).show()
             }
         })
+
     }
 
 

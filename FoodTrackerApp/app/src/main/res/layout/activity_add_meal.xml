@@ -33,55 +33,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogMeal" />
 
+
     <TextView
-        android:id="@+id/selectMealTextView"
+        android:id="@+id/enteredMealNumber1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
         android:text="Select Meal"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteredMealNumber" />
+
+    <EditText
+        android:id="@+id/enteredMealNumber"
+        android:layout_width="324dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter a Number to include in Options"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealName" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup3"
-        android:layout_width="295dp"
-        android:layout_height="142dp"
-        android:layout_marginTop="44dp"
+    <TextView
+        android:id="@+id/mealtimeDescription"
+        android:layout_width="183dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="52dp"
+        android:text="[1]. Breakfast [2]. Lunch   [3]. Dinner   "
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectMealTextView">
-
-        <RadioButton
-            android:id="@+id/breakfastRadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mealChoice1" />
-
-        <RadioButton
-            android:id="@+id/lunchRadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mealChoice2" />
-
-        <RadioButton
-            android:id="@+id/dinnerRadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mealChoice3" />
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/enteredMealNumber" />
 
     <Button
         android:id="@+id/addMealBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="Add Meal"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+        app:layout_constraintTop_toBottomOf="@+id/mealtimeDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>

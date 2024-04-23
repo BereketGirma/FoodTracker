@@ -20,4 +20,16 @@
     <string name="q2option2">3-5 times a week</string>
     <string name="q2option3">6-7 times a week</string>
     <string name="q2option4">None</string>
+
+    <!--profilescreen-->
+    <string name="click_to_check_profile">Check Profile!</string>
+    <string name="excercise_per_week">Excercise per Week:</string>
+    <string name="name">Name :</string>
+    <string name="ageHolder">Age :</string>
+
+    <!--Meal choices options-->
+    <string name="mealChoice1">Breakfast</string>
+    <string name="mealChoice2">Lunch</string>
+    <string name="mealChoice3">Dinner</string>
+
 </resources>
