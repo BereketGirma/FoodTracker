@@ -108,17 +108,54 @@
         app:layout_constraintStart_toEndOf="@+id/excersiceLabel"
         app:layout_constraintTop_toBottomOf="@+id/userAgeHolder" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="37dp"
-        android:layout_height="37dp"
-        android:clickable="true"
+    <ImageButton
+        android:id="@+id/returnToSurvey"
+        android:layout_width="130dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/editprofile" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="136dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/returnToSurvey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
         app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="95dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/returnToSurvey"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/returnToSurvey"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Return"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        tools:layout_editor_absoluteY="635dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
