@@ -13,6 +13,8 @@ import okhttp3.Headers
 class FoodViewScreen: AppCompatActivity()  {
     private lateinit var binding: FoodViewInfoBinding
     private val rvFood get() = binding.foodRecyclerView
+    private val searchBar get() = binding.foodSearchBox
+    private val searchButton get() = binding.foodInfoButton
 
     private lateinit var foodInfoList: MutableList<MutableList<String>>
 

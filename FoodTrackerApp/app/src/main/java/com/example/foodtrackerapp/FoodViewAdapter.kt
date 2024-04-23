@@ -35,7 +35,7 @@ class FoodViewAdapter(private val foodList: List<List<String>>) : RecyclerView.A
             .into(holder.foodImage)
 
         holder.foodImage.setOnClickListener() {
-            Toast.makeText(holder.itemView.context, "Category number $position clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context, "Food number $position clicked", Toast.LENGTH_SHORT).show()
         }
     }
 
