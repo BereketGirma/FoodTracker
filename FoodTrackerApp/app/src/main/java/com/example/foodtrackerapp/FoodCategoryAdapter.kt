@@ -1,5 +1,6 @@
 package com.example.foodtrackerapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,9 +38,19 @@ class FoodCategoryAdapter(private val categoryList: List<List<String>>) : Recycl
             .centerCrop()
             .into(holder.foodCategoryImage)
 
+        val context = holder.itemView.context
+        holder.itemView.setOnClickListener() {
+            val intent = Intent(context, FoodViewScreen::class.java).apply {
+                putExtra("categoryName", categoryList[position][0])
+            }
+            context.startActivity(intent)
+        }
+
+        /*
         holder.foodCategoryImage.setOnClickListener() {
             Toast.makeText(holder.itemView.context, "Category number $position clicked", Toast.LENGTH_SHORT).show()
         }
+        */
     }
 
     override fun getItemCount(): Int {

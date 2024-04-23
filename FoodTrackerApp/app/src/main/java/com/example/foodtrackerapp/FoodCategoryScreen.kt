@@ -12,7 +12,7 @@ import okhttp3.Headers
 
 class FoodCategoryScreen: AppCompatActivity()  {
     private lateinit var binding: FoodCategoryInfoBinding
-    private val rvCategory get() = binding.foodRecyclerView
+    private val rvCategory get() = binding.categoryRecyclerView
 
     private lateinit var categoryInfoList: MutableList<MutableList<String>>
 
