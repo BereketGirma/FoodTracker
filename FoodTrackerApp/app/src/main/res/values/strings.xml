@@ -16,8 +16,8 @@
 
     <!--Question 2 options-->
     <string name="question2">How often do you work out?</string>
-    <string name="q2option1">1-2 times a week</string>
-    <string name="q2option2">3-5 times a week</string>
-    <string name="q2option3">6-7 times a week</string>
+    <string name="q2option1">1–2 times a week</string>
+    <string name="q2option2">3–5 times a week</string>
+    <string name="q2option3">6–7 times a week</string>
     <string name="q2option4">None</string>
 </resources>
