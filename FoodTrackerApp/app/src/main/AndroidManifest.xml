@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodTrackerApp"
         tools:targetApi="31">
+        <!-- ProfileScreen Activity Declaration -->
+        <activity
+            android:name=".ProfileScreen"
+            android:exported="true">
+        </activity>
+
         <activity
             android:name=".FirstLaunchScreen"
             android:exported="true">
