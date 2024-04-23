@@ -34,37 +34,35 @@ Required Features:
 
 <!-- - An Input(EditText) where users can enter the name of the food and the app will display the number of calories of that food.
 - Calculate the suggested amount of calories per day based on age and weight. -->
-- **Calorie Tracking Toolbar** A section at the top that allows users to quickly view their daily calorie goals, food intake, exercise, and remaining calories. This should update in real-time as users add or subtract from their intake and expenditure.
-- **Meal Logging** An interface to input meals, including breakfast, lunch, and dinner. Each meal entry should allow for detailed information such as food name, portion size, and calorie count.
-- **Exercise Logging** A feature to log exercises with details such as type of activity, duration, and calories burned.
-- **User Profile** A dedicated area for users to set up their fitness goal, dietary preferences, and other personal information that could affect calorie needs.
+- [x] **Calorie Tracking Toolbar** A section at the top that allows users to quickly view their daily calorie goals, food intake, exercise, and remaining calories. This should update in real-time as users add or subtract from their intake and expenditure.
+- [x] **Meal Logging** An interface to input meals, including breakfast, lunch, and dinner. Each meal entry should allow for detailed information such as food name, portion size, and calorie count.
+- [x] **User Profile** A dedicated area for users to set up their fitness goal, dietary preferences, and other personal information that could affect calorie needs.
 
 Stretch Features:
 
 <!-- - When entering a food or an exercise, the app will automatically calculate the number of calories consumed or burned. -->
-- **Integrated Food Database** An expansive database of foods with pre-calculated calorie and nutritional information that users can search and add to their daily intake.
-- **AI Meal and Exercise Planner** Using AI to suggest Food and Exercise.
-- **Daily Streak Challenge** Including challenges, badges and rewards to increase users' engagement and motivation.
+- [x] **Integrated Food Database** An expansive database of foods with pre-calculated calorie and nutritional information that users can search and add to their daily intake.
+- [ ] **AI Meal and Exercise Planner** Using AI to suggest Food and Exercise.
+- [ ] **Daily Streak Challenge** Including challenges, badges and rewards to increase users' engagement and motivation.
 
 ### 2. Chosen API(s)
 
 - https://api-ninjas.com/api/nutrition
   - Automatically detects the name of the food from the query.
   - Returns the number of calories of a food and other nutritional facts.
-- https://api-ninjas.com/api/caloriesburned
-  - Automatically detects the exercise from the query.
-  - Returns the number of calories burned from doing the exercise for an hour.
+- https://www.themealdb.com/api.php
+  - Returns food's name and image divided in each category.
 
 ### 3. User Interaction
 
 Required Feature
 
-- Enter age and weight
+- Enter personal information
   - The app will calculate the suggested daily calories intake.
 - Enter name of food eaten
   - The app will return the number of calories of the food, and add it to today's calories.
-- Enter name of exercise
-  - The app will return the number of calories burned from doing the exercise, and subtract it from today's calories.
+- Catalog of food
+  - Users can scroll through the catalog and find food of each category.
 
 ## Wireframes
 
@@ -85,7 +83,8 @@ process, or what you learned this unit!
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
-<img src='https://i.imgur.com/GD4BWYX.gif' title='Gif 1' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/GD4BWYX.gif' title='Gif 1' width='250' alt='Video Demo 1' />
+<img src='https://i.imgur.com/WcuUfxo.gif' title='Gif 2' width='250' alt='Video Demo 2' />
 
 ## License
 
