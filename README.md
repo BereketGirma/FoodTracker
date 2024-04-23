@@ -9,7 +9,7 @@ Submitted by:
 - **Hoang Vu**
 - **Yihong Li**
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Summary
 
@@ -43,7 +43,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/GD4BWYX.gif' title='Video Demo' width='' alt='Video Demo' />
 
 VIDEO created with **your chosen video tool**
 
