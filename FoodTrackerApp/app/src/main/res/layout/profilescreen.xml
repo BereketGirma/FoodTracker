@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="274dp"
+        android:layout_height="253dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="150dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164">
+
+
+        <ImageView
+            android:id="@+id/profileScreenImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profilescreenimage" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/userNameHolder"
+        android:layout_width="196dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="68dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/ageHolder"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+    <TextView
+        android:id="@+id/userAgeHolder"
+        android:layout_width="196dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toEndOf="@+id/ageLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userNameHolder" />
+
+    <TextView
+        android:id="@+id/excersiceLabel"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/excercise_per_week"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLabel" />
+
+    <TextView
+        android:id="@+id/excerciseAmountHolder"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toEndOf="@+id/excersiceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userAgeHolder" />
+
+    <ImageButton
+        android:id="@+id/returnToSurvey"
+        android:layout_width="130dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/editprofile" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="136dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/returnToSurvey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="95dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/returnToSurvey"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/returnToSurvey"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Return"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        tools:layout_editor_absoluteY="635dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
