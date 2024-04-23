@@ -32,5 +32,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // add temporary button to lead to my activity upon launching
+        val toCategoryButton: Button = findViewById(R.id.toCategoriesButton)
+        toCategoryButton.setOnClickListener() {
+            val intent = Intent(this@MainActivity, FoodCategoryScreen::class.java)
+            startActivity(intent)
+        }
     }
 }
