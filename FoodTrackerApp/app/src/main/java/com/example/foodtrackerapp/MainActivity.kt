@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var checkProfileButton:Button
     private lateinit var addItemButton: Button
 
-    private var breakfastCalories = 0
-    private var lunchCalories = 0;
-    private var dinnerCalories = 0;
+    private var breakfastCalories = 0.0
+    private var lunchCalories = 0.0
+    private var dinnerCalories = 0.0
 
     private var dinnerlist = mutableListOf<String>()
     private var lunchlist = mutableListOf<String>()
