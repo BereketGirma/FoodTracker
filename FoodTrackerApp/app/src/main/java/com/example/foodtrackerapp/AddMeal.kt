@@ -51,6 +51,9 @@ class AddMeal : AppCompatActivity() {
                         val firstItem = jsonArray.getJSONObject(0)
                         val calories = firstItem.getDouble("calories")
                         Toast.makeText(this@AddMeal, "Calories: $calories", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this@AddMeal, MainActivity::class.java)
+                        intent.putExtra("calories", calories)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(this@AddMeal, "Please enter a different food", Toast.LENGTH_SHORT).show()
                     }
@@ -63,8 +66,6 @@ class AddMeal : AppCompatActivity() {
                 Toast.makeText(this@AddMeal, responseString ?: "Error", Toast.LENGTH_SHORT).show()
             }
         })
-
-
     }
 
 
