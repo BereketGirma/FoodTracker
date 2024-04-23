@@ -85,6 +85,8 @@ process, or what you learned this unit!
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
+<img src='https://i.imgur.com/GD4BWYX.gif' title='Gif 1' width='' alt='Video Demo' />
+
 ## License
 
 Copyright **2024** **CodePath-AND101-Group 23**

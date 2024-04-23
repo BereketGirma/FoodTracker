@@ -53,8 +53,9 @@
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="315dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_marginTop="12dp"
+        android:padding = "5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber">
@@ -100,8 +101,9 @@
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="315dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_marginTop="12dp"
+        android:padding = "5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
@@ -163,5 +165,4 @@
         app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,7 +33,7 @@ class ProfileScreen: AppCompatActivity() {
         profileSettingButton.setOnClickListener {
             val intent2 = Intent(this,FirstLaunchScreen::class.java)
             startActivity(intent2)
-        } // setOnCliclListner
+        }
 
         // Retrieve user's name and age from SharedPreferences
         val sharedPref = getSharedPreferences("my_preference_file", Context.MODE_PRIVATE)
