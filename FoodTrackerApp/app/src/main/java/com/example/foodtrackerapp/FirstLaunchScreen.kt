@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat
 @SuppressLint("CustomSplashScreen")
 class FirstLaunchScreen : AppCompatActivity() {
 
-    private var prevStarted = "yes"
+    private var prevStarted = "no"
     private var clicked:Boolean = false
     // adding lateinit variables to hold name and age to send it in profile screen
     override fun onCreate(savedInstanceState: Bundle?) {

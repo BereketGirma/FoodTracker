@@ -20,6 +20,12 @@
         </activity>
 
         <activity
+            android:name=".AddMeal"
+            android:exported="true">
+
+        </activity>
+
+        <activity
             android:name=".FirstLaunchScreen"
             android:exported="true">
             <intent-filter>
@@ -28,7 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

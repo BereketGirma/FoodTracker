@@ -41,9 +41,9 @@ class ProfileScreen: AppCompatActivity() {
         val userName = sharedPref.getString("userName_fromSurvey", "Unknown")
         val userAge = sharedPref.getString("userAge", "Unknown")
         val userExerciseWeekly = sharedPref.getString("selectedOption", "Unknown")
-        userNameHolder.text = userName
-        userAgeHolder.text = userAge
-        exerciseAmountHolder.text = userExerciseWeekly
+        userNameHolder.text = userName // updating UI on profile page
+        userAgeHolder.text = userAge // updating UI on the profile page
+        exerciseAmountHolder.text = userExerciseWeekly // updating UI on the profile page
 
     } // onCreate
 } // ProfileScreen
