@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         if(intent != null && intent.extras != null){
-            val calories = intent.extras?.getDouble("calories",0.0)
-
-            Toast.makeText(this, "Received Calories: $calories", Toast.LENGTH_LONG).show()
+            val calories = intent.extras?.getDouble("calories",0.0) // This is the number of calories of the food
+            val itemName = intent.extras?.getString("item","") // This is the name of the food entered by the user
+            Toast.makeText(this, "Food Name: $itemName", Toast.LENGTH_LONG).show()
         }
 
     }

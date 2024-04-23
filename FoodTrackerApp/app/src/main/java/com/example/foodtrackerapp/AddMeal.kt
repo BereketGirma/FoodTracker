@@ -29,6 +29,7 @@ class AddMeal : AppCompatActivity() {
             insets
         }
 
+
         findViewById<Button>(R.id.addMealBtn).setOnClickListener {
             getNutritionURL(findViewById<EditText>(R.id.mealName).text.toString())
         }
@@ -50,9 +51,11 @@ class AddMeal : AppCompatActivity() {
                     if (jsonArray.length() > 0) {
                         val firstItem = jsonArray.getJSONObject(0)
                         val calories = firstItem.getDouble("calories")
-                        Toast.makeText(this@AddMeal, "Calories: $calories", Toast.LENGTH_SHORT).show()
+                        var itemName = firstItem.getString("name")
+                        //Toast.makeText(this@AddMeal, "Calories: $calories", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this@AddMeal, MainActivity::class.java)
                         intent.putExtra("calories", calories)
+                        intent.putExtra("item", itemName)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this@AddMeal, "Please enter a different food", Toast.LENGTH_SHORT).show()
