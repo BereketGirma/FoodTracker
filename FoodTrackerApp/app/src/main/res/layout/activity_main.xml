@@ -40,12 +40,12 @@
 
     <TextView
         android:id="@+id/textViewFoodTotalCalories"
+        style="@style/AppMainTextStyle"
         android:layout_width="96dp"
         android:layout_height="45dp"
         android:layout_below="@id/textViewCalorieGoalValue"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
         android:text="Food Total Calories: "
-        style="@style/AppMainTextStyle"
         app:layout_constraintEnd_toStartOf="@+id/textViewExerciseCalories"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,7 +54,7 @@
         android:layout_width="96dp"
         android:layout_height="43dp"
         android:layout_below="@id/textViewFoodTotalCalories"
-        android:text="1500"
+        android:text="0.0"
         style="@style/AppMainnumberStyle"
         app:layout_constraintEnd_toStartOf="@+id/textViewExerciseCaloriesValue"
         app:layout_constraintTop_toBottomOf="@+id/textViewFoodTotalCalories" />
@@ -77,24 +77,25 @@
         android:layout_height="43dp"
         android:layout_below="@id/textViewExerciseCalories"
         android:layout_marginEnd="4dp"
-        android:text="300"
+        android:text="0"
         style="@style/AppMainnumberStyle"
         app:layout_constraintEnd_toStartOf="@+id/textViewTotalLeftCaloriesValue"
         app:layout_constraintTop_toBottomOf="@+id/textViewExerciseCalories" />
 
+    <!-- add a temporary button to lead to my activity upon launching -->
+
     <TextView
         android:id="@+id/textViewTotalLeftCalories"
+        style="@style/AppMainTextStyle"
         android:layout_width="94dp"
         android:layout_height="42dp"
         android:layout_below="@id/textViewExerciseCaloriesValue"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="28dp"
         android:text="Total Left Calories: "
-        style="@style/AppMainTextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- add a temporary button to lead to my activity upon launching -->
     <Button
         android:id="@+id/toCategoriesButton"
         android:layout_width="125dp"
@@ -111,7 +112,7 @@
         android:layout_height="44dp"
         android:layout_below="@id/textViewTotalLeftCalories"
         android:layout_marginEnd="28dp"
-        android:text="1200"
+        android:text="2000"
         style="@style/AppMainnumberStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTotalLeftCalories" />
