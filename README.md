@@ -26,11 +26,11 @@ The following REQUIRED features are completed:
 
 The following REQUIRED files are included:
 
-- [ ] Updated 📄 `project_spec.md`, which contains:
-  - [X] App Overview (Milestone 1)
-  - [X] App Spec (Milestone 1)
+- [x] Updated 📄 `project_spec.md`, which contains:
+  - [x] App Overview (Milestone 1)
+  - [x] App Spec (Milestone 1)
   - [x] Checked off 2+ completed features
-  - [ ] 2+ Videos/GIFs of build progress
+  - [x] 2+ Videos/GIFs of build progress
 
 - [ ] Our 🎥 Demo Video
   - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
