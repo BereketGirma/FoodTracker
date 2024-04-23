@@ -38,17 +38,18 @@ class MealRecyclerViewAdapter(private val mealList: MutableList<Meal>) :
         holder.mealTimeCalorieLabel.text = "Calories Total : "
         holder.mealTimeNumCalorieLabel.text = "${meal.totalCalories.toString()}" // You may need to update this based on the total calories
         holder.mealListMessage.text = "item list here : "
-        holder.listEachTimeMeal.text = "${meal.itemList}" // You may need to update this based on the item list
+        holder.listEachTimeMeal.text = "${meal.itemList.joinToString(separator = ", ")}" // You may need to update this based on the item list
 
         // Load image based on meal time
         val imageResId = when (meal.mealTime) {
-            "BREAKFAST" -> R.drawable.breakfast
+            "Breakfast" -> R.drawable.breakfast
             "Lunch" -> R.drawable.lunchphoto
             "Dinner" -> R.drawable.dinnerphoto
             else -> R.drawable.breakfast // Add a default image resource ID if needed
         }
         Glide.with(holder.itemView.context)
             .load(imageResId)
+            .centerCrop()
             .into(holder.imageViewPerTimeMeal)
 
             // You can add any additional logic here, such as handling item clicks
@@ -59,7 +60,7 @@ class MealRecyclerViewAdapter(private val mealList: MutableList<Meal>) :
     fun setMealList(mealTime: String, totalCalories: Double, itemList: MutableList<String>) {
         val meal = Meal(mealTime, totalCalories, itemList)
         when (mealTime) {
-            "BREAKFAST" -> mealList[0] = meal
+            "Breakfast" -> mealList[0] = meal
             "Lunch" -> mealList[1] = meal
             "Dinner" -> mealList[2] = meal
         }

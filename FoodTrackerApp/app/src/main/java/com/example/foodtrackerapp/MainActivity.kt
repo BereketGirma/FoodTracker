@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
     private var lunchCalories = 0.0
     private var dinnerCalories = 0.0
 
-    private var dinnerlist = mutableListOf<String>()
-    private var lunchlist = mutableListOf<String>()
-    private var breakfastlist = mutableListOf<String>()
+    private lateinit var dinnerlist: MutableList<String>
+    private lateinit var lunchlist: MutableList<String>
+    private lateinit var breakfastlist: MutableList<String>
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: MealRecyclerViewAdapter
@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         checkProfileButton = findViewById(R.id.checkingProfile)
         addItemButton = findViewById<Button>(R.id.addButton)
 
+        dinnerlist = mutableListOf()
+        lunchlist = mutableListOf()
+        breakfastlist = mutableListOf()
+
+
         // Initialize RecyclerView
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -42,8 +47,6 @@ class MainActivity : AppCompatActivity() {
 
         // Set adapter to RecyclerView
         recyclerView.adapter = adapter
-
-        updateRecyclerView()
 
         // Notify adapter that data set has changed
         adapter.notifyDataSetChanged()
@@ -75,6 +78,10 @@ class MainActivity : AppCompatActivity() {
         // Convert mealTypeString to an integer if it's not empty
         val mealType = if (mealTypeString?.isNotEmpty() == true) mealTypeString.toInt() else 0
 
+        breakfastlist.clear()
+        lunchlist.clear()
+        dinnerlist.clear()
+
         // Add meal to the appropriate list based on meal type
         when (mealType) {
             1 -> {
@@ -96,10 +103,10 @@ class MainActivity : AppCompatActivity() {
     }
     private fun updateRecyclerView() {
         // Clear the existing mealList
-
+        mealList.clear()
 
         // Add new meals to the mealList
-        mealList.add(Meal("BREAKFAST", breakfastCalories, breakfastlist))
+        mealList.add(Meal("Breakfast", breakfastCalories, breakfastlist))
         mealList.add(Meal("Lunch", lunchCalories, lunchlist))
         mealList.add(Meal("Dinner", dinnerCalories, dinnerlist))
 

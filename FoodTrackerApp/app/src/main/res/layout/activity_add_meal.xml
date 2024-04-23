@@ -71,10 +71,11 @@
 
     <Button
         android:id="@+id/addMealBtn"
-        android:layout_width="216dp"
-        android:layout_height="36dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_marginTop="12dp"
-        android:text="Button"
+        android:text="Add meal"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealtimeDescription" />
