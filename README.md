@@ -32,21 +32,41 @@ The following REQUIRED files are included:
   - [x] Checked off 2+ completed features
   - [x] 2+ Videos/GIFs of build progress
 
-- [ ] Our 🎥 Demo Video
-  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
+- [x] Our 🎥 Demo Video
+  - [x] We have also added the Demo Video Link to the Group Info Form on the course portal.
 
 The following EXTRA features are implemented:
 
 - [ ] List anything else that you added to improve your submission!
 
 ## 🎥 Demo Video
-
 Here's a video that demos all of the app's implemented features:
 
-<img src='' title='Video Demo' width='' alt='Video Demo' />
+
+Demo 1:
+
+
+<img src='https://github.com/BereketGirma/FoodTracker/assets/145808743/2c193523-3fbc-4940-8fe9-26ec4c455404' title='Video Demo' width='150' alt='Video Demo' />
+
+
+Demo 2
+
+
+<img src='https://github.com/BereketGirma/FoodTracker/assets/145808743/e5530314-9c0a-431e-bf37-ac50a853b31d' title='Video Demo' width='150' alt='Video Demo' />
+
+
+Demo 3
+
+
+<img src='https://github.com/BereketGirma/FoodTracker/assets/145808743/39725bfc-5a8c-4fc6-9814-bbc810b459d6' title='Video Demo' width='150' alt='Video Demo' />
+
 
 VIDEO created with **your chosen video tool**
 
 ## Notes
 
 Here's a place for any other notes on this milestone!
+
+
+
+
