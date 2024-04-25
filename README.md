@@ -41,7 +41,7 @@ The following EXTRA features are implemented:
 
 ## 🎥 Demo Video
 Here's a video that demos all of the app's implemented features:
-
+https://vimeo.com/938446999?share=copy
 
 Demo 1:
 
